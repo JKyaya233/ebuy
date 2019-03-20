@@ -26,7 +26,7 @@ $(function(){
 <body style="background:url(images/topbg.gif) repeat-x;">
 
     <div class="topleft">
-    <a href="main.html" target="_parent"><img src="images/logo.png" title="系统首页" /></a>
+    <a href="main.jsp" target="_parent"><img src="images/logo.png" title="系统首页" /></a>
     </div>
         
     <ul class="nav">
