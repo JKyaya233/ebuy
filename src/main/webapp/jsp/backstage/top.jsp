@@ -46,7 +46,7 @@ $(function(){
     </ul>
      
     <div class="user">
-    <span>${sessionScope.username}</span>
+    <span>${sessionScope.admin.name}</span>
     <i>消息</i>
     <b>5</b>
     </div>    
