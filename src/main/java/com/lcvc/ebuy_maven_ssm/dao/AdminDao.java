@@ -1,6 +1,8 @@
 package com.lcvc.ebuy_maven_ssm.dao;
 
 import com.lcvc.ebuy_maven_ssm.model.Admin;
+import com.lcvc.ebuy_maven_ssm.util.SHA;
+import sun.security.util.Password;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +16,7 @@ public class AdminDao {
 	 * @return true表示登录成功,false表示登录失败
 	 */
 	public boolean login(String username,String password){
+		password= SHA.getResult(password);
 		boolean judge=false;//表示登录状态，默认失败
 		Connection conn=DBHelper.getConnection();
 		PreparedStatement pstmt=null;
